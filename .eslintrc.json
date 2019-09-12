@@ -1,0 +1,71 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "mocha": true
+    },
+    "globals": {
+        "expect": true,
+        "sinon": true,
+        "srcRequire": true,
+        "srcRewire": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 8
+    },
+    "plugins": [
+        "mocha"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "mocha/handle-done-callback": "error",
+        "mocha/no-exclusive-tests": "error",
+        "mocha/no-identical-title": "error",
+        "mocha/no-mocha-arrows": "error",
+        "mocha/no-nested-tests": "error",
+        "mocha/no-pending-tests": "warn",
+        "mocha/no-sibling-hooks": "error",
+        "mocha/no-skipped-tests": "error",
+        "no-trailing-spaces": "error",
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "all",
+                "ignoreRestSiblings": false,
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

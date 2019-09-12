@@ -1,0 +1,8 @@
+--reporter dot
+--ui bdd
+--recursive
+--colors
+--timeout 10000
+--exit
+./test/hooks.js
+./test/**/*.test.js
